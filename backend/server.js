@@ -6,8 +6,6 @@ const connectDatabase = require('./config/db');
 // Handling Uncaught Exception
 process.on("uncaughtException", (err) => { console.log(`Shutting Down Server for Handling Uncaught Exception : ${err.message}`); });
 
-dotenv.config({ path: ".env" });
-
 const PORT = process.env.PORT || 7000;
 const HOST = '0.0.0.0';
 
